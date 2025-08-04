@@ -62,7 +62,7 @@
 cd AI-Healthcare
 </pre>
 
-<h3>2Set Up the Virtual Environment</h3>
+<h3>Set Up the Virtual Environment</h3>
 <pre>
 python -m venv venv
 venv\Scripts\activate  # On Windows
