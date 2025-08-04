@@ -84,6 +84,3 @@ streamlit run home.py
 </pre>
 
 
-" target="_blank">🔗 LinkedIn</a> |
-  <a href="https://x.com/AbhaySingh71711" target="_blank"> 🐦 Twitter</a>
-</p>
