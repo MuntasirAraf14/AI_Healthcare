@@ -1,8 +1,12 @@
 import streamlit as st
+from packaging import version
+
+supports_use_container_width = version.parse(st.__version__) >= version.parse("1.12.0")
+
 
 st.set_page_config(
     page_title="AI-Powered Healthcare Intelligence Network",
-   
+    page_icon="🩺",
     layout="wide"
 )
 
@@ -24,13 +28,13 @@ st.markdown("""
             color: #1e90ff;
             text-align: center;
             margin-bottom: 10px;
-            
+            text-shadow: 0px 0px 10px rgba(30, 144, 255, 0.5);
         }
 
         /* Subtitle */
         .subtitle {
             font-size: 24px;
-            color: #black;
+            color: #bdbdbd;
             text-align: center;
             font-weight: 300;
             margin-bottom: 40px;
@@ -100,7 +104,8 @@ st.markdown("<div class='subtitle'>Transforming Healthcare with AI-driven Predic
 
 st.image("utils/ph1.png", use_container_width=True)
 
-
+# Features Section
+st.markdown("<h2 style='text-align: center; color: #ffffff;'>✨ Features</h2>", unsafe_allow_html=True)
 
 col1, col2 = st.columns(2)
 
@@ -132,7 +137,8 @@ with col2:
 
 st.markdown("---")
 
-
+# Technologies Used
+st.markdown("<h2 style='text-align: center; color: #ffffff;'>⚙️ Technologies Used</h2>", unsafe_allow_html=True)
 
 col1, col2, col3 = st.columns(3)
 
@@ -175,6 +181,23 @@ st.markdown("""
     </div>
     """ , unsafe_allow_html=True)
 
+st.markdown("---")
 
+# Contact Us (Left Aligned)
+st.markdown("""
+    <div class='contact'>
+        <h2>📬 Contact Us</h2>
+        <p>Have questions or need support? Reach out to us at:</p>
+        📧 <a href="mailto:abhaysingh71711@gmail.com">abhaysingh71711@gmail.com</a>
+    </div>
+    """, unsafe_allow_html=True)
 
-
+# Profile Links (Centered)
+st.markdown("""
+    <div class='profile-links'>
+        <h2>🌐 Connect With Me</h2>
+        <a href="https://github.com/AbhaySingh71" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/in/abhay-singh-050a5b293/" target="_blank">LinkedIn</a> |
+        <a href="https://x.com/AbhaySingh71711" target="_blank">Twitter</a>
+    </div>
+    """, unsafe_allow_html=True)

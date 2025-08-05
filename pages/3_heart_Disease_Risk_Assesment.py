@@ -4,6 +4,7 @@ import numpy as np
 import pickle as pkl
 from PIL import Image
 import io
+import category_encoders as ce  # Should work after installation
 from lightgbm import LGBMClassifier
 import category_encoders as ce
 from imblearn.ensemble import EasyEnsembleClassifier
